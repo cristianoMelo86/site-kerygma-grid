@@ -1,0 +1,60 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: .3rem;
+	grid-template-areas: 
+		"menu"
+		"hero"
+		"main"
+	;
+	grid-auto-rows: minmax(30px, auto); 
+	
+}
+
+.l-menu{
+	grid-area: menu;
+	background-color: coral;
+}
+
+.l-hero{
+	grid-area: hero;
+	background-color: skyblue;
+}
+
+.l-main{
+	grid-area: main;
+	background-color: teal;
+}
+
+.m-service{
+	background-color: indigo;
+	height: 350px;
+	display: grid;
+	grid-template-columns: minmax(100px,auto) 1fr;
+	grid-template-rows: repeat(2,1fr);
+}
+
+.m-service__head{
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	background-color: silver;
+}
+
+.m-service__content{
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+	background-color: gold;
+}
+
+
+
+
+
+
+
+
